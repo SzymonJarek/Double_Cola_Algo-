@@ -33,7 +33,7 @@ public class Line
     }
 }
 
-// Explenation: 
+// Explenation (by SicarianKIssstalker): 
 
 // I will try to explain this decision:
 // imagine what our series looks like abcde 2a2b2c2d2e... and so on.
