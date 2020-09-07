@@ -1,4 +1,4 @@
-Solution 1:
+//Solution 1:
 
 using System;
 
@@ -20,7 +20,7 @@ public class Line
         }
     }
 
-Solution 2: (Recursive)
+//Solution 2: (Recursive)
 
 using System;
 
@@ -33,14 +33,14 @@ public class Line
     }
 }
 
-Explenation: 
+// Explenation: 
 
-I will try to explain this decision:
-imagine what our series looks like abcde 2a2b2c2d2e... and so on.
-if n<names.Length, it is very easy to determine who drank the right bottle.
-Otherwise, we simplify our range of names.
+// I will try to explain this decision:
+// imagine what our series looks like abcde 2a2b2c2d2e... and so on.
+// if n<names.Length, it is very easy to determine who drank the right bottle.
+// Otherwise, we simplify our range of names.
 
-n - l - We "cut" first names. We cut "abcde". and our range become 2a2b2c2d2e 4a4b4c4d4e...
-+1 - to make sure that after dividing by 2 we will not lose some elements
-/2 - when we divide, our "new" range from "2a2b2c2d2e 4a4b4c4d4e..." become "abcde 2a2b2c2d2e".
-So, we made new range the same as the old, but shorter.
+// n - l - We "cut" first names. We cut "abcde". and our range become 2a2b2c2d2e 4a4b4c4d4e...
+// +1 - to make sure that after dividing by 2 we will not lose some elements
+// /2 - when we divide, our "new" range from "2a2b2c2d2e 4a4b4c4d4e..." become "abcde 2a2b2c2d2e".
+// So, we made new range the same as the old, but shorter.
